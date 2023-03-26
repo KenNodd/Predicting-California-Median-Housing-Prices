@@ -9,7 +9,7 @@ Original Data:
 
 (Relevant file: "True California Median Housing Values by Census Tract.html")
 
-![](RackMultipart20230326-1-oniqae_html_caf0557d15e02650.png)
+[a link]([https://github.com/user/repo/blob/branch/other_file.md](https://github.com/KenNodd/Predicting-California-Median-Housing-Prices/blob/main/True%20California%20Median%20Housing%20Values%20by%20Census%20Tract.html))
 
 Los Angeles:
 
