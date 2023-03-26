@@ -9,13 +9,15 @@ Original Data:
 
 (Relevant file: [https://github.com/KenNodd/Predicting-California-Median-Housing-Prices/blob/main/True%20California%20Median%20Housing%20Values%20by%20Census%20Tract.html])
 
+![fullTrue](https://user-images.githubusercontent.com/129005431/227804203-cac2cfb0-9e39-47ff-9fa8-1801aa871a48.png)
+
 Los Angeles:
 
-![](RackMultipart20230326-1-oniqae_html_c3cbc3bb34ff1972.png)
+![laTrue](https://user-images.githubusercontent.com/129005431/227804226-c23e1afd-a255-4265-b17f-eec052a82691.png)
 
 San Francisco:
 
-![](RackMultipart20230326-1-oniqae_html_b03bda62a79e2d21.png)
+![sfTrue](https://user-images.githubusercontent.com/129005431/227804214-584f25db-e8fe-4c56-80b3-0340780bec6b.png)
 
 The yellow borders on these maps and also on the maps of my predictions below denote census tracts which were colored based on the fuzzy matching algorithm I described in the introduction.
 
@@ -23,29 +25,29 @@ Predicted Values:
 
 (Relevant file: https://github.com/KenNodd/Predicting-California-Median-Housing-Prices/blob/main/California%20Median%20Housing%20Values%20by%20Census%20Tract%20(Predicted).html)
 
-![](RackMultipart20230326-1-oniqae_html_cdb5a1149d71f028.png)
+![fullPredictions](https://user-images.githubusercontent.com/129005431/227804239-8369bfb8-b3a3-4035-8eca-beebd0fdc263.png)
 
 Los Angeles:
 
-![](RackMultipart20230326-1-oniqae_html_110d7a0a692c9ad8.png)
+![laPredictions](https://user-images.githubusercontent.com/129005431/227804244-fd07e1cf-d83a-4550-80e9-e26f9f6b09ea.png)
 
 San Francisco:
 
-![](RackMultipart20230326-1-oniqae_html_58f8eab5abb64a48.png)
+![sfPredictions](https://user-images.githubusercontent.com/129005431/227804246-59c73d0c-7e42-4bb2-b40f-581de6d1cafe.png)
 
 Residual Errors:
 
 (Relevant file: https://github.com/KenNodd/Predicting-California-Median-Housing-Prices/blob/main/Residual%20Error.html)
 
-![](RackMultipart20230326-1-oniqae_html_aa43da2c312064fa.png)
+![fullResidual](https://user-images.githubusercontent.com/129005431/227804263-f12c6e02-e002-45aa-85a9-bcf0eaeef519.png)
 
 Los Angeles:
 
-![](RackMultipart20230326-1-oniqae_html_54b7dda5603549e8.png)
+![laResidual](https://user-images.githubusercontent.com/129005431/227804278-e0ed4e32-0a99-4785-874a-f7b2b0c675cc.png)
 
 San Francisco:
 
-![](RackMultipart20230326-1-oniqae_html_9f5f490e9d272314.png)
+![sfResidual](https://user-images.githubusercontent.com/129005431/227804299-98a135eb-7b16-4d20-9c8f-b0810b07b4fa.png)
 
 I have also provided maps of the percentage error (residual divided by true median housing value), which I believe is a more useful assessment of accuracy—overvaluing a home by $20,000 in a market where the average home sells for $2,000,000 is much less severe than overvaluing by the same amount a home in a market where the average home value is $200,000, but the above graphs would color both districts the same.
 
@@ -53,12 +55,13 @@ Percent Error:
 
 (Relevant file: https://github.com/KenNodd/Predicting-California-Median-Housing-Prices/blob/main/Percent%20Error.html)
 
-![](RackMultipart20230326-1-oniqae_html_c4dc4461632352d8.png)
+![fullPercentError](https://user-images.githubusercontent.com/129005431/227804314-bfa81bb1-4915-4b5f-9397-cfcbece47b03.png)
 
 Los Angeles:
 
-![](RackMultipart20230326-1-oniqae_html_2ab46a21cacb6692.png)
+![laPercentError](https://user-images.githubusercontent.com/129005431/227804325-cd9ae325-9f36-478d-a544-9921168d8845.png)
 
 San Francisco:
 
-![](RackMultipart20230326-1-oniqae_html_d3ad10054648908e.png)
+![sfPercentError](https://user-images.githubusercontent.com/129005431/227804328-2e25045f-d742-4d3a-b432-7653f5c852c1.png)
+
