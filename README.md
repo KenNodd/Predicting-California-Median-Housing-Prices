@@ -7,9 +7,7 @@ Below I have attached images from the various maps I created for this project, h
 
 Original Data:
 
-(Relevant file: "True California Median Housing Values by Census Tract.html")
-
-[a link]([https://github.com/user/repo/blob/branch/other_file.md](https://github.com/KenNodd/Predicting-California-Median-Housing-Prices/blob/main/True%20California%20Median%20Housing%20Values%20by%20Census%20Tract.html))
+(Relevant file: [https://github.com/KenNodd/Predicting-California-Median-Housing-Prices/blob/main/True%20California%20Median%20Housing%20Values%20by%20Census%20Tract.html])
 
 Los Angeles:
 
@@ -23,7 +21,7 @@ The yellow borders on these maps and also on the maps of my predictions below de
 
 Predicted Values:
 
-(Relevant file: "California Median Housing Values by Census Tract (Predicted).html)
+(Relevant file: https://github.com/KenNodd/Predicting-California-Median-Housing-Prices/blob/main/California%20Median%20Housing%20Values%20by%20Census%20Tract%20(Predicted).html)
 
 ![](RackMultipart20230326-1-oniqae_html_cdb5a1149d71f028.png)
 
@@ -37,7 +35,7 @@ San Francisco:
 
 Residual Errors:
 
-(Relevant file: Residual Error.html)
+(Relevant file: https://github.com/KenNodd/Predicting-California-Median-Housing-Prices/blob/main/Residual%20Error.html)
 
 ![](RackMultipart20230326-1-oniqae_html_aa43da2c312064fa.png)
 
@@ -53,7 +51,7 @@ I have also provided maps of the percentage error (residual divided by true medi
 
 Percent Error:
 
-(Relevant file: "Percent Error.html")
+(Relevant file: https://github.com/KenNodd/Predicting-California-Median-Housing-Prices/blob/main/Percent%20Error.html)
 
 ![](RackMultipart20230326-1-oniqae_html_c4dc4461632352d8.png)
 
