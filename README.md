@@ -7,7 +7,7 @@ Below I have attached images from the various maps I created for this project, h
 
 Original Data:
 
-(Relevant file: [https://github.com/KenNodd/Predicting-California-Median-Housing-Prices/blob/main/True%20California%20Median%20Housing%20Values%20by%20Census%20Tract.html])
+(Relevant file: [https://kennodd.github.io/Predicting-California-Median-Housing-Prices/True%20California%20Median%20Housing%20Values%20by%20Census%20Tract.html])
 
 ![fullTrue](https://user-images.githubusercontent.com/129005431/227804203-cac2cfb0-9e39-47ff-9fa8-1801aa871a48.png)
 
@@ -23,7 +23,7 @@ The yellow borders on these maps and also on the maps of my predictions below de
 
 Predicted Values:
 
-(Relevant file: https://github.com/KenNodd/Predicting-California-Median-Housing-Prices/blob/main/California%20Median%20Housing%20Values%20by%20Census%20Tract%20(Predicted).html)
+(Relevant file: https://kennodd.github.io/Predicting-California-Median-Housing-Prices/California%20Median%20Housing%20Values%20by%20Census%20Tract%20(Predicted).html)
 
 ![fullPredictions](https://user-images.githubusercontent.com/129005431/227804239-8369bfb8-b3a3-4035-8eca-beebd0fdc263.png)
 
@@ -37,7 +37,7 @@ San Francisco:
 
 Residual Errors:
 
-(Relevant file: https://github.com/KenNodd/Predicting-California-Median-Housing-Prices/blob/main/Residual%20Error.html)
+(Relevant file: https://kennodd.github.io/Predicting-California-Median-Housing-Prices/Residual%20Error)
 
 ![fullResidual](https://user-images.githubusercontent.com/129005431/227804263-f12c6e02-e002-45aa-85a9-bcf0eaeef519.png)
 
@@ -53,7 +53,7 @@ I have also provided maps of the percentage error (residual divided by true medi
 
 Percent Error:
 
-(Relevant file: https://github.com/KenNodd/Predicting-California-Median-Housing-Prices/blob/main/Percent%20Error.html)
+(Relevant file: https://kennodd.github.io/Predicting-California-Median-Housing-Prices/Percent%20Error.html)
 
 ![fullPercentError](https://user-images.githubusercontent.com/129005431/227804314-bfa81bb1-4915-4b5f-9397-cfcbece47b03.png)
 
