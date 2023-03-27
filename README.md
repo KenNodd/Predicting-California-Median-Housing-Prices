@@ -1,13 +1,15 @@
 # Predicting-California-Median-Housing-Prices
-I was given data at the census tract level in California with metrics like latitude and longitude, median housing age, median income, and population, along with the true median housing value for the census tract. In order to predict median housing value given the data, I initialized a gradient boosting algorithm with a maximum number of 10,000 trees and an interaction depth of 6. I also performed two-fold cross validation on the model, which enabled me to find the optimal number of trees for my prediction based on out-of-sample performance. I found that the optimal model used 4,917 trees, with an out-of-sample RMSE of 46,856, which is a 23% percent average error when to the mean true median housing value of 206,868.
+I was given data at the census tract level in California with metrics like latitude and longitude, median housing age, median income, and population, along with the true median housing value for the census tract. In order to predict median housing value given the data, I initialized a gradient boosting algorithm with a maximum number of 10,000 trees and an interaction depth of 6. I also performed two-fold cross validation on the model, which enabled me to find the optimal number of trees for my prediction based on out-of-sample performance. I found that the optimal model used 4,917 trees, with an out-of-sample RMSE of 46,856, which is a 23% percent average error when compared to the mean true median housing value of 206,868.
 
-In order to map both my original data and the predictions, I matched the latitude/longitude pairs I was given with census-tract GEOIDs. In so doing, I noticed a problem with the original data where the coordinates were rounded to the hundredth decimal place. This was not much of a problem for the large census tracts, but many census tracts in California, especially in dense urban areas, are smaller in size than a hundredth of a coordinate. This lead to many rows having duplicated coordinates and being impossible to assign to a specific census tract, ultimately creating many holes in the graph especially in downtown Los Angeles and San Francisco. I fixed this problem by segregating out the non-specific rows and used a fuzzy joining algorithm to match them to census tracts within 0.5 miles. I then took the median of those matched rows to color the census tract on the map.
+Notably, my original dataset did not include the GEOID of the relevant census tract for each row, which is the standard way to match data to census districts. Therefore, In order to both my original data and the predictions on a map of the Californian census tracts, I had to first match the latitude/longitude pairs I was given with census-tract GEOIDs. In so doing, I noticed an issue with the original data where the coordinates were rounded to the hundredth decimal place. This was not much of a problem for the large census tracts, but many census tracts in the dense urban areas of California are smaller in size than a hundredth of a coordinate. This rounding therefore lead to many rows having duplicated coordinates and being impossible to assign to a specific census tract, ultimately creating many holes in the map especially in downtown Los Angeles and San Francisco. While I could have fairly easily downloaded a more spacially accurate dataset from the census to match to those missing values, I decided instead to treat this as an exercise in working with imperfect data, which I believe is a valuable skill in a reality where imperfections are common in data, and the ability to simply download better data is rare. 
+
+In order to solve the rounding problem I first segregated out the rows that could not be assigned with certaintly to a specific census tract and then used a fuzzy joining algorithm to match them to all census tracts within 0.5 miles of the given coordinates. I then took the median of those matched rows to color the census tract on the map. I have denoted census tracts colored this way on the maps for the true values and the predictions, and you can see that there do not appear to be very major aberations present.
 
 Below I have attached images from the various maps I created for this project, however, due to the scale of the data (many census tracts are very small and tightly packed, and therefore illegible when viewing the entirety of California) I believe that the best way to view this data is through an interactive map that can be zoomed and panned. The code for these maps is provided along with my other work, however creating them is quite resource intensive, so I have also provided links below that will open each of the maps in your web browser. I highly encourage opening those files and panning around the maps yourself rather than relying solely on the images below.
 
 Original Data:
 
-(Relevant file: [https://kennodd.github.io/Predicting-California-Median-Housing-Prices/True%20California%20Median%20Housing%20Values%20by%20Census%20Tract.html])
+(Interactive map: https://kennodd.github.io/Predicting-California-Median-Housing-Prices/True%20California%20Median%20Housing%20Values%20by%20Census%20Tract.html)
 
 ![fullTrue](https://user-images.githubusercontent.com/129005431/227804203-cac2cfb0-9e39-47ff-9fa8-1801aa871a48.png)
 
@@ -23,7 +25,7 @@ The yellow borders on these maps and also on the maps of my predictions below de
 
 Predicted Values:
 
-(Relevant file: https://kennodd.github.io/Predicting-California-Median-Housing-Prices/California%20Median%20Housing%20Values%20by%20Census%20Tract%20(Predicted).html)
+(Interactive map: https://kennodd.github.io/Predicting-California-Median-Housing-Prices/California%20Median%20Housing%20Values%20by%20Census%20Tract%20(Predicted).html)
 
 ![fullPredictions](https://user-images.githubusercontent.com/129005431/227804239-8369bfb8-b3a3-4035-8eca-beebd0fdc263.png)
 
@@ -37,7 +39,7 @@ San Francisco:
 
 Residual Errors:
 
-(Relevant file: https://kennodd.github.io/Predicting-California-Median-Housing-Prices/Residual%20Error)
+(Interactive map: https://kennodd.github.io/Predicting-California-Median-Housing-Prices/Residual%20Error)
 
 ![fullResidual](https://user-images.githubusercontent.com/129005431/227804263-f12c6e02-e002-45aa-85a9-bcf0eaeef519.png)
 
@@ -53,7 +55,7 @@ I have also provided maps of the percentage error (residual divided by true medi
 
 Percent Error:
 
-(Relevant file: https://kennodd.github.io/Predicting-California-Median-Housing-Prices/Percent%20Error.html)
+(Interactive map: https://kennodd.github.io/Predicting-California-Median-Housing-Prices/Percent%20Error.html)
 
 ![fullPercentError](https://user-images.githubusercontent.com/129005431/227804314-bfa81bb1-4915-4b5f-9397-cfcbece47b03.png)
 
